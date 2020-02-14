@@ -1,4 +1,4 @@
-.movies .movie {
+.items .item {
   text-align: center;
   width: 300px;
   height: 600px;
@@ -12,7 +12,7 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-.movie img {
+.item img {
   margin:auto;
   width:250px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -20,10 +20,10 @@
 }
 
 @media only screen and (max-width:1270px) {
-  .movie img {
+  .item img {
     width:98%;
   }
-  .movies .movie{ 
+  .items .item{ 
     margin: 5vh 2vw;
     width:30vw;
     height: auto;
@@ -31,10 +31,10 @@
 }
 
 @media only screen and (max-width:768px) {
-  .movie img {
+  .item img {
     width:99%;
   }
-  .movies .movie{ 
+  .items .item{ 
     margin: 3vh 2vw;
     width: 70vw;
     height: auto;

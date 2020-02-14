@@ -9,7 +9,7 @@ text-align:center;
 function About() {
     return (
         <div>
-            <H1>movie Api, React</H1>            
+            <H1>Shopping Api, React</H1>            
         </div>
     )
 }
