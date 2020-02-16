@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Menu, Icon } from "antd";
+import { Icon } from "antd";
 import styled from "styled-components";
-import { Link, useHistory } from "react-router-dom";
-import { Input } from "antd";
 import "antd/dist/antd.css";
 
 const DDiv = styled.div`

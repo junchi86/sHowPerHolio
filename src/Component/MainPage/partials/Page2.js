@@ -1,16 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import ItemCardPage2 from "../ItemCardPage2/ItemCardPage2";
+import ItemCardPage2 from "./ItemCardPage2/ItemCardPage2";
 
-const Body = styled.div`
-  width: 100%;
+
+const P2 = styled.div`
   background: #f7f1f0;
-`;
-
-const Div = styled.div`
   padding: 50px 50px 20px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: "Romanesco";
   .box1 {
     padding: 20px 20px 0 20px;
@@ -30,7 +27,6 @@ const Div = styled.div`
 `;
 
 const ItemFlex = styled.div`
-  background: #f7f1f0;
   margin: auto;
   width: 100%;
   padding: 0 50px;
@@ -280,13 +276,11 @@ function Page2() {
 
   const item = superItem.items;
   return (
-    <Body>
-      <Div>
-        <div className="box1">
-          <h1>JOURNAL</h1>
-          <p>SEE OUR STORIES</p>
-        </div>
-      </Div>
+    <P2>
+      <div className="box1">
+        <h1>JOURNAL</h1>
+        <p>SEE OUR STORIES</p>
+      </div>
       <ItemFlex>
         <ItemCardPage2
           className="itemcard"
@@ -316,7 +310,7 @@ function Page2() {
           mallName={item[14].mallName}
         />
       </ItemFlex>
-    </Body>
+    </P2>
   );
 }
 

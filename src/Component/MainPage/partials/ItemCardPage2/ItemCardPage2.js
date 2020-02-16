@@ -7,10 +7,9 @@ const DIV = styled.div`
   ${reset}
   padding: 10px;
   width: 100%;
-  height: 100%;
   .outer {
     width: 100%;
-    height: 100%;
+    height: 60%;
     box-sizing: border-box;
     img {
       display: block;
@@ -20,13 +19,13 @@ const DIV = styled.div`
     }
     .innerText {
       text-align: center;
-      margin: auto;
-      width: 97%;
+      margin: 20px auto;
+      width: 100%;
       white-space: nowrap;
       background: #f7f1f0;
       h1 {
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 30px;
+        font-weight: 400;
         color: black;
         text-align: center;
         background: #f7f1f0;

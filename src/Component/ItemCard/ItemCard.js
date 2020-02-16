@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import reset from "styled-reset";
+import { Link } from 'react-router-dom'
 
 const DIV = styled.div`
   ${reset}
