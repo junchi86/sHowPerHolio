@@ -40,7 +40,11 @@ function App() {
         <Switch>
           <Route exact path="/new" component={New}></Route>
           <Route exact path="/lookbook" component={LookBook}></Route>
-          <Route exact path="/shop" component={Shop}></Route>
+          <Route exact path="/shop/all" component={Shop}></Route>
+          <Route exact path="/shop/dresses" component={Shop}></Route>
+          <Route exact path="/shop/tops" component={Shop}></Route>
+          <Route exact path="/shop/tshirts" component={Shop}></Route>
+          <Route exact path="/shop/bottoms" component={Shop}></Route>
           <Route exact path="/collections" component={Collections}></Route>
           <Route exact path="/help" component={Help}></Route>
           <Route exact path="/search" component={Search}></Route>

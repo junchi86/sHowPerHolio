@@ -2,6 +2,7 @@ import React from 'react';
 import { Icon } from 'antd';
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
+import ShopFilter from './ShopFilter';
 
 function Header() {
   return (
@@ -19,7 +20,9 @@ function Header() {
               <li>LOOKBOOK</li>
             </Link>
             <Link to="/shop">
-              <li>SHOP</li>
+              <li>
+                <ShopFilter />
+              </li>
             </Link>
             <Link to="/collections">
               <li>COLLECTIONS</li>
