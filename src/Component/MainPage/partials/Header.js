@@ -28,25 +28,20 @@ function Header() {
               <li>COLLECTIONS</li>
             </Link>
           </ul>
-          <div className="logo">Cherry Coke</div>
+          <div className="logo"><Link to='/'>Cherry Coke</Link></div>
           <ul className="ultwo">
+            <Link to="/join">
+              <li>
+                JOIN
+              </li>
+            </Link>
+            <Link to="/login">
+              <li>
+                LOGIN
+              </li>
+            </Link>
             <Link to="/help">
-              <li>HELP</li>
-            </Link>
-            <Link to="/search">
-              <li>
-                <Icon type="search" />
-              </li>
-            </Link>
-            <Link to="/cart">
-              <li>
-                <Icon type="shopping-cart" />
-              </li>
-            </Link>
-            <Link to="/user">
-              <li>
-                <Icon type="smile" />
-              </li>
+              <li><Icon type="phone" /></li>
             </Link>
           </ul>
         </div>

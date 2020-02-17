@@ -15,6 +15,8 @@ import Help from './Component/MainPage/partials/Help';
 import Search from './Component/MainPage/partials/Search';
 import Cart from './Component/MainPage/partials/Cart';
 import User from './Component/MainPage/partials/User';
+import Login from './Component/MainPage/HeaderPartials/Login';
+import Join from './Component/MainPage/HeaderPartials/Join';
 
 const GlobalStyle = createGlobalStyle`
      ${reset};
@@ -50,6 +52,8 @@ function App() {
           <Route exact path="/search" component={Search}></Route>
           <Route exact path="/cart" component={Cart}></Route>
           <Route exact path="/user" component={User}></Route>
+          <Route exact path="/login" component={Login}></Route>
+          <Route exact path="/join" component={Join}></Route>
           <Route path="/item-detail/:productId" component={Detail}></Route>
         </Switch>
         <Route path="/" component={Footer}></Route>
