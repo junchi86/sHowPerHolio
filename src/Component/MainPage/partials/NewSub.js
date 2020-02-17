@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ItemCardPage2({ productId, title, lprice, image, link, mallName }) {
+function NewSub({ productId, title, lprice, image, link, mallName }) {
   const titleR = title.replace(/(<b)(.+?)(<\s?\/\s?b>)/, '');
+
   return (
     <div className="itemcard">
       <Link
@@ -42,4 +43,4 @@ function ItemCardPage2({ productId, title, lprice, image, link, mallName }) {
   );
 }
 
-export default ItemCardPage2;
+export default NewSub;
