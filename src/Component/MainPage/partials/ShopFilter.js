@@ -1,9 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
+import Axios from 'axios';
 
 function ShopFilter() {
-  const itemOfAll = {
+  const itemOfAll = async () => {
+    try {
+      const apiCall = await Axios({
+        url: 'http://localhost:4000/graphql/',
+        method: 'post',
+        data: {
+          query: `
+          query items(QUERY:"doen"){title}
+          `
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json'
+        }
+      }
+      )
+      console.log(apiCall.data)
+    } catch (error) {
+      console.log('hey man!')
+    }
+  }
+  itemOfAll()
+
+  const itemOfAll2 = {
     lastBuildDate: 'Mon, 17 Feb 2020 12:17:10 +0900',
     total: 400,
     start: 1,
@@ -2354,7 +2378,7 @@ function ShopFilter() {
         <Link
           to={{
             pathname: '/shop/all',
-            state: { title: 'ALL', items: itemOfAll }
+            state: { title: 'ALL', items: itemOfAll2 }
           }}
         >
           <div>ALL</div>

@@ -242,10 +242,14 @@ function LookBook() {
   const mapItem = superItem.items;
   const props = {
     infinite: true,
-    speed: 300,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
+    dots: true,
+    arrows: true,
+    centerMode: true,
+    fade: true
   };
   return (
     <div className="lookbook-component">

@@ -19,6 +19,7 @@ function Join() {
 
     const onSubmitAction = (e) => {
         e.preventDefault()
+        console.log(email, password, password2)
         //const auth = async()=> await axios.post('/join',{email,password})
     }
 
