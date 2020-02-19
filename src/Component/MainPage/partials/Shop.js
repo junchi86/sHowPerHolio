@@ -1,20 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Spin, Icon } from 'antd';
 import ItemCard from '../../ItemCard/ItemCard';
+import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
 
 function Shop({ location }) {
-  const initialState = { shop: [], loading: true };
-  const [shoppedItem, setShoppedItem] = useState(initialState.shop);
-  const [isLoading, setIsLoading] = useState(initialState.loading);
+  const { QUERY, NUM } = location.state;
+  const GET_ITEMS = gql`
+    query getItems($QUERY: String!, $NUM: Int!) {
+      items(QUERY: $QUERY, NUM: $NUM) {
+        title
+        link
+        image
+        lprice
+        hprice
+        mallName
+        productId
+      }
+    }
+  `;
+  const { loading, error, data } = useQuery(GET_ITEMS, {
+    variables: { QUERY, NUM }
+  });
+
   const antIcon = <Icon type="loading" style={{ fontSize: 35 }} spin />;
-  const getItem = () => {
-    setShoppedItem(location.state.items.items);
-    console.log(shoppedItem);
-    setIsLoading(false);
-  };
-
-  useEffect(getItem, [location.state.items.items]);
-
   return (
     <div className="shop-component">
       <div className="box1">
@@ -22,14 +31,9 @@ function Shop({ location }) {
         <p>SEE OUR {location.state.title} PRODUCTS</p>
       </div>
       <section className="container">
-        {isLoading ? (
-          <div className="loader">
-            <span className="loader__text">Loading...</span>{' '}
-            <Spin indicator={antIcon} />
-          </div>
-        ) : (
+        {!loading && data ? (
           <div className="items">
-            {shoppedItem.map(i => (
+            {data.items.map(i => (
               <ItemCard
                 key={i.productId}
                 productId={i.productId}
@@ -40,6 +44,11 @@ function Shop({ location }) {
                 mallName={i.mallName}
               />
             ))}
+          </div>
+        ) : (
+          <div className="loader">
+            <span className="loader__text">Loading...</span>{' '}
+            <Spin indicator={antIcon} />
           </div>
         )}
       </section>
