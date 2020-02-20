@@ -12,9 +12,6 @@ import Shop from './Component/MainPage/partials/Shop';
 import Collections from './Component/MainPage/partials/Collections';
 import Footer from './Component/MainPage/partials/Footer';
 import Help from './Component/MainPage/partials/Help';
-import Search from './Component/MainPage/partials/Search';
-import Cart from './Component/MainPage/partials/Cart';
-import User from './Component/MainPage/partials/User';
 import Login from './Component/MainPage/HeaderPartials/Login';
 import Join from './Component/MainPage/HeaderPartials/Join';
 
@@ -36,10 +33,6 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-      {/* <Route exact path="/shop/dresses" component={Shop}></Route>
-          <Route exact path="/shop/tops" component={Shop}></Route>
-          <Route exact path="/shop/tshirts" component={Shop}></Route>
-          <Route exact path="/shop/bottoms" component={Shop}></Route> */}
       <Router>
         <Route path="/" component={Main}></Route>
         <Route exact path="/" component={Page1}></Route>
@@ -50,9 +43,6 @@ function App() {
           <Route exact path="/shop" component={Page1}></Route>
           <Route exact path="/collections" component={Collections}></Route>
           <Route exact path="/help" component={Help}></Route>
-          <Route exact path="/search" component={Search}></Route>
-          <Route exact path="/cart" component={Cart}></Route>
-          <Route exact path="/user" component={User}></Route>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/join" component={Join}></Route>
           <Route path="/item-detail/:productId" component={Detail}></Route>
