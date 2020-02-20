@@ -292,6 +292,10 @@
         white-space: nowrap;
         z-index: 5;
         h1 {
+          margin-left: auto;
+          width: 80%;
+          text-overflow: ellipsis;
+          overflow: hidden;
           line-height: normal;
           position: relative;
           font-size: 25px;
@@ -305,7 +309,7 @@
           position: relative;
           font-size: 20px;
           top: 200px;
-          color: rgb(152, 255, 166);
+          color: white;
         }
         h3 {
           position: relative;

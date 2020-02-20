@@ -53,21 +53,15 @@ function Header() {
             </Link>
           </ul>
           <div className="logo">
-            <div className="res-icon">
-              <Link onClick={onClickMenu}>
-                <Icon type="menu" />
-              </Link>
-            </div>
-            <div className="logo-name">
-              <Link to="/" onClick={setMenuFalse}>
-                Cherry Coke
-              </Link>
-            </div>
-            <div className="res-icon">
-              <Link onClick={onClickUser}>
-                <Icon type="user" />
-              </Link>
-            </div>
+            <Link className="res-icon" onClick={onClickMenu}>
+              <Icon type="menu" />
+            </Link>
+            <Link className="logo-name" to="/" onClick={setMenuFalse}>
+              Cherry Coke
+            </Link>
+            <Link className="res-icon" onClick={onClickUser}>
+              <Icon type="user" />
+            </Link>
           </div>
           <ul
             className="ultwo"

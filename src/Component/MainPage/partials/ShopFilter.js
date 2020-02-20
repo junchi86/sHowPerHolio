@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
 
 function ShopFilter({ onClick }) {
-
   const menu = (
     <Menu>
       <Menu.Item>
