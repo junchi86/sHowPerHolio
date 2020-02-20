@@ -13,7 +13,7 @@ function ShopFilter({ onClick }) {
             state: { title: 'ALL', QUERY: 'doen', NUM: 100 }
           }}
         >
-          <div>ALL</div>
+          <div className="menu-item-filter">ALL</div>
         </Link>
       </Menu.Item>
       <Menu.Item>
@@ -24,7 +24,7 @@ function ShopFilter({ onClick }) {
             state: { title: 'DRESSES', QUERY: 'doen dress', NUM: 20 }
           }}
         >
-          <div>DRESSES</div>
+          <div className="menu-item-filter">DRESSES</div>
         </Link>
       </Menu.Item>
       <Menu.Item>
@@ -35,7 +35,7 @@ function ShopFilter({ onClick }) {
             state: { title: 'TOPS', QUERY: 'doen 블라우스', NUM: 20 }
           }}
         >
-          <div>TOPS</div>
+          <div className="menu-item-filter">TOPS</div>
         </Link>
       </Menu.Item>
       <Menu.Item>
@@ -46,7 +46,7 @@ function ShopFilter({ onClick }) {
             state: { title: 'TSHIRTS', QUERY: 'doen top', NUM: 20 }
           }}
         >
-          <div>T-SHIRTS</div>
+          <div className="menu-item-filter">T-SHIRTS</div>
         </Link>
       </Menu.Item>
       <Menu.Item>
@@ -57,7 +57,7 @@ function ShopFilter({ onClick }) {
             state: { title: 'BOTTOMS', QUERY: 'doen skirt', NUM: 20 }
           }}
         >
-          <div>BOTTOMS</div>
+          <div className="menu-item-filter">BOTTOMS</div>
         </Link>
       </Menu.Item>
     </Menu>

@@ -8,7 +8,7 @@
   background: white;
   .back {
     width: 100%;
-    font-family: 'Romanesco';
+    font-family: "Romanesco";
     height: 50px;
     font-size: 24px;
     display: flex;
@@ -51,7 +51,7 @@
 }
 
 .page1 {
-  background: url('https://cdn.shopify.com/s/files/1/0950/9820/t/261/assets/hero.jpg?117479')
+  background: url("https://cdn.shopify.com/s/files/1/0950/9820/t/261/assets/hero.jpg?117479")
     no-repeat;
   background-size: cover;
   width: 100%;
@@ -63,7 +63,7 @@
   padding: 9vh 50px 20px;
   width: 100%;
   height: 100vh;
-  font-family: 'Romanesco';
+  font-family: "Romanesco";
   .box1 {
     padding: 20px 20px 0 20px;
     h1 {
@@ -72,7 +72,7 @@
       margin-bottom: 5px;
     }
     p {
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -123,7 +123,7 @@
   height: 100vh;
   background: white;
   padding: 9vh 50px 20px;
-  font-family: 'Romanesco';
+  font-family: "Romanesco";
   .ant-carousel {
     margin: 50px auto;
     width: 100%;
@@ -188,7 +188,7 @@
     margin-bottom: 5px;
   }
   p {
-    font-family: 'Work Sans';
+    font-family: "Work Sans";
     font-size: 15px;
     text-align: center;
     padding: 10px;
@@ -207,7 +207,7 @@
       margin-bottom: 5px;
     }
     p {
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -219,7 +219,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    font-family: 'Work Sans';
+    font-family: "Work Sans";
   }
 
   .loader {
@@ -273,7 +273,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        content: '';
+        content: "";
         background: rgb(0, 0, 0);
         background: linear-gradient(
           0deg,
@@ -380,7 +380,7 @@
       margin-bottom: 5px;
     }
     p {
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -405,7 +405,7 @@
       margin-bottom: 5px;
     }
     p {
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -421,7 +421,7 @@
 }
 
 .footer {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   position: fixed;
   bottom: 0;
   left: 0;
@@ -440,8 +440,8 @@
 }
 
 /* Full-width input fields */
-input[type='text'],
-input[type='password'] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -451,15 +451,15 @@ input[type='password'] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type='text']:focus,
-input[type='password']:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   background-color: #f7f1f0;
   outline: none;
 }
 
 /* Set a style for all buttons */
 button {
-  font-family: 'Romanesco';
+  font-family: "Romanesco";
   font-size: 20px;
   background-color: #ffe7e58e;
   border: 1px solid black;
@@ -495,7 +495,7 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -523,7 +523,7 @@ hr {
 
 /* Clear floats */
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
@@ -557,8 +557,8 @@ hr {
     width: 100%;
   }
   /* Full-width input fields */
-  input[type='text'],
-  input[type='password'] {
+  input[type="text"],
+  input[type="password"] {
     width: 100%;
     padding: 11px 10px;
     margin: 4% auto;
@@ -568,8 +568,8 @@ hr {
   }
 
   /* Add a background color when the inputs get focus */
-  input[type='text']:focus,
-  input[type='password']:focus {
+  input[type="text"]:focus,
+  input[type="password"]:focus {
     background-color: #f7f1f0;
     outline: none;
   }
@@ -582,7 +582,7 @@ hr {
     background: white;
     .back {
       width: 100%;
-      font-family: 'Romanesco';
+      font-family: "Romanesco";
       height: 100%;
       font-size: 24px;
       display: flex;
@@ -606,8 +606,11 @@ hr {
         visibility: hidden;
         display: block;
         background: white;
+        width: 100%;
         li {
           background: white;
+          width: 100%;
+          height: 100%;
           padding: 0 10px;
           font-size: 20px;
           cursor: pointer;
@@ -639,12 +642,15 @@ hr {
       .ultwo {
         order: 3;
         justify-content: center;
+        width: 100%;
         height: 0;
         opacity: 0;
         visibility: hidden;
         background: white;
         li {
           padding: 0 25px;
+          width: 100%;
+          height: 100%;
           cursor: pointer;
           background: white;
         }
@@ -653,7 +659,7 @@ hr {
   }
 
   .page1 {
-    background: url('https://cdn.shopify.com/s/files/1/0950/9820/t/261/assets/hero.jpg?117479')
+    background: url("https://cdn.shopify.com/s/files/1/0950/9820/t/261/assets/hero.jpg?117479")
       no-repeat;
     background-size: cover;
     background-position: center center;
@@ -666,7 +672,7 @@ hr {
     padding: 80px 50px 20px;
     width: 100%;
     height: 100%;
-    font-family: 'Romanesco';
+    font-family: "Romanesco";
     .box1 {
       padding: 20px 20px 10px 20px;
       h1 {
@@ -675,7 +681,7 @@ hr {
         margin-bottom: 5px;
       }
       p {
-        font-family: 'Work Sans';
+        font-family: "Work Sans";
         font-size: 15px;
         text-align: center;
         padding: 10px;
@@ -729,7 +735,7 @@ hr {
     height: 100vh;
     background: white;
     padding: 80px 0px 20px;
-    font-family: 'Romanesco';
+    font-family: "Romanesco";
     .ant-carousel {
       padding: 50px 0 0 0;
       margin: 0;
@@ -794,7 +800,7 @@ hr {
       margin-bottom: 5px;
     }
     p {
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -806,14 +812,14 @@ hr {
     background: rgba(201, 233, 246, 0.219);
     padding: 80px 0;
     .box1 {
-      padding: 20px 20px 0 20px;
+      padding: 20px 20px 20px 20px;
       h1 {
         font-size: 35px;
         text-align: center;
         margin-bottom: 5px;
       }
       p {
-        font-family: 'Work Sans';
+        font-family: "Work Sans";
         font-size: 15px;
         text-align: center;
         padding: 10px;
@@ -825,7 +831,7 @@ hr {
       height: 100%;
       display: flex;
       justify-content: center;
-      font-family: 'Work Sans';
+      font-family: "Work Sans";
     }
 
     .loader {
@@ -857,14 +863,14 @@ hr {
         color: tomato;
       }
       .item {
-        width: 200px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         padding: 10px;
         img {
           display: block;
           box-sizing: border-box;
           width: 100%;
-          height: auto;
+          height: 40vw;
           animation-delay: 0.5s;
         }
         .outer {
@@ -888,50 +894,35 @@ hr {
           z-index: 5;
           overflow: auto;
           h1 {
-            line-height: normal;
+            line-height: 2;
             position: relative;
-            font-size: 25px;
+            font-size: 12px;
             font-weight: 700;
-            color: black;
             text-align: right;
-            margin-bottom: 15px;
+            color: black;
+            margin-bottom: 0px;
             top: 0;
           }
           h2 {
             position: relative;
-            font-size: 20px;
+            font-size: 12px;
             top: 0;
-            color: rgb(152, 255, 166);
+            color: black;
           }
           h3 {
+            display: none;
             position: relative;
             font-size: 20px;
             font-weight: 700;
             color: black;
-            margin-top: 10px;
+            margin-top: 0px;
             top: 0;
           }
         }
 
-        &:nth-child(5n) {
-          width: 100%;
-          height: 100%;
-        }
-        &:nth-child(5n + 1) {
-          width: 100%;
-          height: 100%;
-        }
-        &:nth-child(5n + 2) {
-          width: 100%;
-          height: 100%;
-        }
-        &:nth-child(5n + 3) {
-          width: 100%;
-          height: 100%;
-        }
-        &:nth-child(5n + 4) {
-          width: 100%;
-          height: 100%;
+        &:nth-child(n) {
+          width: 40%;
+          height: 35vh;
         }
       }
     }
@@ -947,7 +938,7 @@ hr {
         margin-bottom: 5px;
       }
       p {
-        font-family: 'Work Sans';
+        font-family: "Work Sans";
         font-size: 15px;
         text-align: center;
         padding: 10px;
@@ -963,7 +954,7 @@ hr {
   }
 
   .help {
-    padding: 9vh 0;
+    padding: 80px 0;
     .box1 {
       padding: 20px 20px 0 20px;
       h1 {
@@ -972,7 +963,7 @@ hr {
         margin-bottom: 5px;
       }
       p {
-        font-family: 'Work Sans';
+        font-family: "Work Sans";
         font-size: 15px;
         text-align: center;
         padding: 10px;
@@ -981,12 +972,17 @@ hr {
     }
     & > h1 {
       text-align: center;
-      line-height: 70vh;
+      line-height: 60vh;
       font-size: 50px;
       color: red;
     }
   }
-
+  .menu-item-filter {
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    line-height: 30px;
+  }
   .footer {
     display: none;
   }
