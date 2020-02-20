@@ -8,7 +8,7 @@
   background: white;
   .back {
     width: 100%;
-    font-family: "Romanesco";
+    font-family: "Inconsolata";
     height: 50px;
     font-size: 24px;
     display: flex;
@@ -63,7 +63,7 @@
   padding: 9vh 50px 20px;
   width: 100%;
   height: 100vh;
-  font-family: "Romanesco";
+  font-family: "Inconsolata";
   .box1 {
     padding: 20px 20px 0 20px;
     h1 {
@@ -123,7 +123,7 @@
   height: 100vh;
   background: white;
   padding: 9vh 50px 20px;
-  font-family: "Romanesco";
+  font-family: "Inconsolata";
   .ant-carousel {
     margin: 50px auto;
     width: 100%;
@@ -230,7 +230,6 @@
     align-items: center;
     font-weight: bold;
     font-size: 40px;
-    color: tomato;
   }
 
   .loader span {
@@ -318,9 +317,9 @@
         }
       }
       &:hover .outer img {
-        transform: scale(1.2);
+        transform: scale(1.05);
         filter: brightness(0.7);
-        transition: 0.7s;
+        transition: 0.5s;
       }
 
       &:hover .outer:after {
@@ -331,19 +330,19 @@
       &:hover .innerText h1 {
         top: 0;
         transition: 0.5s;
-        transition-delay: 0.2s;
+        transition-delay: 0.3s;
         transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
       }
       &:hover .innerText h2 {
         top: 0;
         transition: 0.5s;
-        transition-delay: 0.3s;
+        transition-delay: 0.5s;
         transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
       }
       &:hover .innerText h3 {
         top: 0;
         transition: 0.5s;
-        transition-delay: 0.3s;
+        transition-delay: 0.6s;
         transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
       }
       &:nth-child(5n) {
@@ -459,7 +458,7 @@ input[type="password"]:focus {
 
 /* Set a style for all buttons */
 button {
-  font-family: "Romanesco";
+  font-family: "Inconsolata";
   font-size: 20px;
   background-color: #ffe7e58e;
   border: 1px solid black;
@@ -582,9 +581,7 @@ hr {
     background: white;
     .back {
       width: 100%;
-      font-family: "Romanesco";
       height: 100%;
-      font-size: 24px;
       display: flex;
       flex-direction: column;
       line-height: 70px;
@@ -614,7 +611,6 @@ hr {
           padding: 0 10px;
           font-size: 20px;
           cursor: pointer;
-          font-size: 25px;
           border-bottom: 1px solid lightgray;
         }
       }
@@ -622,7 +618,7 @@ hr {
         order: 1;
         justify-content: center;
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
         letter-spacing: 0.1em;
         cursor: default;
@@ -648,6 +644,7 @@ hr {
         visibility: hidden;
         background: white;
         li {
+          font-size: 20px;
           padding: 0 25px;
           width: 100%;
           height: 100%;
@@ -672,11 +669,11 @@ hr {
     padding: 80px 50px 20px;
     width: 100%;
     height: 100%;
-    font-family: "Romanesco";
+    font-family: "Inconsolata";
     .box1 {
       padding: 20px 20px 10px 20px;
       h1 {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
         margin-bottom: 5px;
       }
@@ -718,7 +715,10 @@ hr {
             white-space: nowrap;
             background: #f7f1f0;
             h1 {
-              font-size: 30px;
+              width: 100%;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              font-size: 15px;
               font-weight: 400;
               color: black;
               text-align: center;
@@ -735,7 +735,7 @@ hr {
     height: 100vh;
     background: white;
     padding: 80px 0px 20px;
-    font-family: "Romanesco";
+    font-family: "Inconsolata";
     .ant-carousel {
       padding: 50px 0 0 0;
       margin: 0;
@@ -795,7 +795,7 @@ hr {
   .box1 {
     padding: 20px 20px 0 20px;
     h1 {
-      font-size: 35px;
+      font-size: 25px;
       text-align: center;
       margin-bottom: 5px;
     }
@@ -814,7 +814,7 @@ hr {
     .box1 {
       padding: 20px 20px 20px 20px;
       h1 {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
         margin-bottom: 5px;
       }
@@ -841,8 +841,7 @@ hr {
       justify-content: center;
       align-items: center;
       font-weight: bold;
-      font-size: 40px;
-      color: tomato;
+      font-size: 20px;
     }
 
     .loader span {
@@ -859,7 +858,7 @@ hr {
       & > h1 {
         line-height: 81.6vh;
         text-align: center;
-        font-size: 80px;
+        font-size: 20px;
         color: tomato;
       }
       .item {
@@ -894,10 +893,13 @@ hr {
           z-index: 5;
           overflow: auto;
           h1 {
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
             line-height: 2;
             position: relative;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 600;
             text-align: right;
             color: black;
             margin-bottom: 0px;
@@ -911,12 +913,6 @@ hr {
           }
           h3 {
             display: none;
-            position: relative;
-            font-size: 20px;
-            font-weight: 700;
-            color: black;
-            margin-top: 0px;
-            top: 0;
           }
         }
 
@@ -933,7 +929,7 @@ hr {
     .box1 {
       padding: 20px 20px 0 20px;
       h1 {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
         margin-bottom: 5px;
       }
@@ -948,7 +944,7 @@ hr {
     & > h1 {
       text-align: center;
       line-height: 60vh;
-      font-size: 50px;
+      font-size: 25px;
       color: red;
     }
   }
@@ -977,12 +973,14 @@ hr {
       color: red;
     }
   }
+
   .menu-item-filter {
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     border-bottom: 1px solid lightgrey;
     line-height: 30px;
   }
+
   .footer {
     display: none;
   }

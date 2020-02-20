@@ -8,10 +8,7 @@ function ShopFilter({ onClick }) {
       <Menu.Item>
         <Link
           onClick={onClick}
-          to={{
-            pathname: '/shop/all',
-            state: { title: 'ALL', QUERY: 'doen', NUM: 100 }
-          }}
+          to='/shop/all'
         >
           <div className="menu-item-filter">ALL</div>
         </Link>
@@ -19,10 +16,7 @@ function ShopFilter({ onClick }) {
       <Menu.Item>
         <Link
           onClick={onClick}
-          to={{
-            pathname: '/shop/dresses',
-            state: { title: 'DRESSES', QUERY: 'doen dress', NUM: 20 }
-          }}
+          to='/shop/dresses'
         >
           <div className="menu-item-filter">DRESSES</div>
         </Link>
@@ -30,10 +24,7 @@ function ShopFilter({ onClick }) {
       <Menu.Item>
         <Link
           onClick={onClick}
-          to={{
-            pathname: '/shop/tops',
-            state: { title: 'TOPS', QUERY: 'doen 블라우스', NUM: 20 }
-          }}
+          to='/shop/tops'
         >
           <div className="menu-item-filter">TOPS</div>
         </Link>
@@ -41,10 +32,7 @@ function ShopFilter({ onClick }) {
       <Menu.Item>
         <Link
           onClick={onClick}
-          to={{
-            pathname: '/shop/tshirts',
-            state: { title: 'TSHIRTS', QUERY: 'doen top', NUM: 20 }
-          }}
+          to='/shop/tshirts'
         >
           <div className="menu-item-filter">T-SHIRTS</div>
         </Link>
@@ -52,10 +40,7 @@ function ShopFilter({ onClick }) {
       <Menu.Item>
         <Link
           onClick={onClick}
-          to={{
-            pathname: '/shop/bottoms',
-            state: { title: 'BOTTOMS', QUERY: 'doen skirt', NUM: 20 }
-          }}
+          to='/shop/bottoms'
         >
           <div className="menu-item-filter">BOTTOMS</div>
         </Link>
