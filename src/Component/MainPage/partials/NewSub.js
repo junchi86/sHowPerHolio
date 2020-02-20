@@ -1,44 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-function NewSub({ productId, title, lprice, image, link, mallName }) {
+function NewSub({ title, image, link }) {
   const titleR = title.replace(/(<b)(.+?)(<\s?\/\s?b>)/, '');
 
   return (
     <div className="itemcard">
-      <Link
-        to={{
-          pathname: `/item-detail/${productId}`,
-          state: {
-            productId,
-            title,
-            lprice,
-            image,
-            link,
-            mallName
-          }
-        }}
-      >
-        <div className="outer">
-          <img src={image} alt={title} className="animated fadeIn" />
-          <div className="innerText">
-            <Link
-              to={{
-                pathname: `/item-detail/${productId}`,
-                state: {
-                  productId,
-                  title,
-                  lprice,
-                  image,
-                  link
-                }
-              }}
-            >
-              <h1>{titleR}</h1>
-            </Link>
-          </div>
+      <div className="outer">
+        <a href={link}><img src={image} alt={title} className="animated fadeIn" /></a>
+        <div className="innerText">
+          <h1>{titleR}</h1>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

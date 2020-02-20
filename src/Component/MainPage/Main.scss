@@ -577,7 +577,7 @@ hr {
 @media only screen and (max-width: 1200px) {
   .header-component {
     width: 100%;
-    height: 70px;
+    height: auto;
     background: white;
     .back {
       width: 100%;
@@ -590,18 +590,15 @@ hr {
       color: black;
       text-align: center;
       ul {
-        display: flex;
         justify-content: center;
         width: 100%;
         height: 100%;
         background: white;
       }
       .ulone {
+        display: none;
         order: 2;
-        height: 0;
-        opacity: 0;
-        visibility: hidden;
-        display: block;
+        height: 100%;
         background: white;
         width: 100%;
         li {
@@ -618,6 +615,7 @@ hr {
         order: 1;
         justify-content: center;
         width: 100%;
+        height: 100%;
         font-size: 25px;
         font-weight: 500;
         letter-spacing: 0.1em;
@@ -636,12 +634,11 @@ hr {
         }
       }
       .ultwo {
+        display: none;
         order: 3;
         justify-content: center;
         width: 100%;
-        height: 0;
-        opacity: 0;
-        visibility: hidden;
+        height: 100%;
         background: white;
         li {
           font-size: 20px;
@@ -650,6 +647,7 @@ hr {
           height: 100%;
           cursor: pointer;
           background: white;
+          border-bottom: lightgrey;
         }
       }
     }

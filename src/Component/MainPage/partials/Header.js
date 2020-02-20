@@ -29,10 +29,8 @@ function Header() {
             style={
               openMenu
                 ? {
-                    height: '100%',
-                    opacity: 1,
-                    visibility: 'visible'
-                  }
+                  display: 'block'
+                }
                 : {}
             }
           >
@@ -76,10 +74,8 @@ function Header() {
             style={
               openUser
                 ? {
-                    height: '100%',
-                    opacity: 1,
-                    visibility: 'visible'
-                  }
+                  display: 'flex'
+                }
                 : {}
             }
           >

@@ -14,6 +14,7 @@ import Footer from './Component/MainPage/partials/Footer';
 import Help from './Component/MainPage/partials/Help';
 import Login from './Component/MainPage/HeaderPartials/Login';
 import Join from './Component/MainPage/HeaderPartials/Join';
+import 'react-app-polyfill/ie9';
 
 const GlobalStyle = createGlobalStyle`
      ${reset};
