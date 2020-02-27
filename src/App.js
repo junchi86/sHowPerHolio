@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
+export const BACK_SUB = 'http://localhost:4000'
+
 function App() {
   return (
     <>

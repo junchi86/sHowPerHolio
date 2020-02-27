@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, useHistory } from 'react-router-dom'
+import Axios from 'axios'
 
 function Join() {
+    const history = useHistory()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     const [password2, setPassword2] = useState()
@@ -17,17 +18,26 @@ function Join() {
         setPassword2(e.target.value)
     }
 
-    const onSubmitAction = (e) => {
+    const onSubmitAction = async (e) => {
         e.preventDefault()
-        console.log(email, password, password2)
-        //const auth = async()=> await axios.post('/join',{email,password})
+        const params = { email, password, password2 }
+        try {
+            if (password !== password2) { return alert('패스워드가 일치하지 않습니다!') }
+            let auth = await Axios.post(`http://localhost:4000/join`, params)
+            if (auth.status === 200) {
+                return window.confirm('회원가입에 성공했습니다.') && history.push('/')
+            }
+            else { return alert('회원가입에 실패했습니다. ') }
+        } catch (error) {
+            return alert('회원가입에 실패했습니다. // 다른 아이디 사용을 추천합니다.')
+        }
     }
 
 
     return (
         <div>
             <div id="id01" className="modal">
-                <form className="modal-content" onSubmit={onSubmitAction} action="/join" method="post">
+                <form className="modal-content" onSubmit={onSubmitAction}>
                     <div className="container">
                         <h1>JOIN</h1>
                         <p><br />Please fill the blanks.</p>
