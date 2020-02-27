@@ -20,7 +20,9 @@ function Login() {
         e.preventDefault()
         try {
             const params = { email, password }
-            const auth = await Axios.post('http://localhost:4000/login', params)
+            const auth = await Axios.post('http://localhost:4000/login', params, {
+                withCredentials: true,
+            })
             if (auth.data === 'HOME') { return window.confirm('로그인 성공!') && history.push('/') }
             else { return alert('로그인이 실패했습니다.') }
         } catch (error) {

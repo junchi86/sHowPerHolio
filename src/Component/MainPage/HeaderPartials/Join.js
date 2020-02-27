@@ -23,7 +23,9 @@ function Join() {
         const params = { email, password, password2 }
         try {
             if (password !== password2) { return alert('패스워드가 일치하지 않습니다!') }
-            let auth = await Axios.post(`http://localhost:4000/join`, params)
+            let auth = await Axios.post(`http://localhost:4000/join`, params, {
+                withCredentials: true,
+            })
             if (auth.status === 200) {
                 return window.confirm('회원가입에 성공했습니다.') && history.push('/')
             }
